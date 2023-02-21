@@ -6,9 +6,5 @@
   "author": "Simon Bäckström",
   "description": "Core for my projects",
   "dependencies": {
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/capsizedmoose/com.simonb.core.git",
   }
 }
