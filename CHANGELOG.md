@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.0...v1.0.1) (2023-02-21)
+
+
+### Bug Fixes
+
+* _camera to private in Helper.cs ([f028a36](https://github.com/capsizedmoose/com.simonb.core/commit/f028a36445c1d4c1d653e7c9cff5dae019aee642))
+* made _camera private in Helper ([17cfd0c](https://github.com/capsizedmoose/com.simonb.core/commit/17cfd0c33a8d9569dcbcd098c8a52c8872f732c8))
+
 # 1.0.0 (2023-02-21)
 
 
