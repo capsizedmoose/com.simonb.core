@@ -7,7 +7,7 @@ namespace SimonB.Core.Utility
     public static class Helper
     {
         
-        public static Camera _camera;
+        private static Camera _camera;
 
         public static Camera Camera
         {
