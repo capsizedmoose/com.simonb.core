@@ -8,6 +8,7 @@ namespace SimonB.Core.Utility
             transform.position += vector2.ToVector3(0);
         }
         
+        
         public static void DeleteChildren(this Transform t)
         {
             foreach (Transform child in t)Object.Destroy(child.gameObject);
