@@ -1,0 +1,16 @@
+{
+    "name": "SimonB.Core.Utility",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9e38b36acc95f3f46a55e4cb294984cd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
