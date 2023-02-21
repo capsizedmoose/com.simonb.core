@@ -5,6 +5,5 @@
   "unity": "2021.3",
   "author": "Simon Bäckström",
   "description": "Core for my projects",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
