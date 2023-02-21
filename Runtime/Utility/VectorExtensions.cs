@@ -25,6 +25,7 @@ namespace SimonB.Core.Utility
             v.y = (sin * tx) + (cos * ty);
             return v;
         }
+        
 
         public static Vector2 ToDirectionVector(this float degrees) {
             float sin = Mathf.Sin(degrees * Mathf.Deg2Rad);
