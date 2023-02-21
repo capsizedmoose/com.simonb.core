@@ -13,6 +13,7 @@ namespace SimonB.Core.Utility
         {
             return new Vector3(vector2.x, flipYZ ? depth : vector2.y, flipYZ ? vector2.y : depth);
         }
+        
 
         public static Vector2 Rotate(this Vector2 v, float degrees)
         {
