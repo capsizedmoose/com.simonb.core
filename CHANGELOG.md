@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.1...v1.0.2) (2023-03-15)
+
+
+### Bug Fixes
+
+* added float to Euler ([c0ab623](https://github.com/capsizedmoose/com.simonb.core/commit/c0ab6235129c0129f2fa2e7b9f4e0e20b92b2a58))
+
 ## [1.0.1](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.0...v1.0.1) (2023-02-21)
 
 
