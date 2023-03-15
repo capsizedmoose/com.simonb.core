@@ -46,11 +46,13 @@ namespace SimonB.Core.Utility
             return Vector2.SignedAngle(Vector2.right, vector2.normalized);
         }
 
-        public static Quaternion ToEulerAngle(this Vector2 vec)
-        {
-            return Quaternion.Euler(0, 0, vec.ToSignedAngle());
+        public static Quaternion ToEulerAngle(this Vector2 vec) {
+            return ToEulerAngle(vec.ToSignedAngle());
         }
-        
+        public static Quaternion ToEulerAngle(this float angle)
+        {
+            return Quaternion.Euler(0, 0, angle);
+        }
         public static float RandomBetween(this Vector2 vec)
         {
             return Random.Range(vec.x, vec.y);
