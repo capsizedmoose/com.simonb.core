@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.2...v1.0.3) (2023-03-25)
+
+
+### Bug Fixes
+
+* added vector3 Flat ([3bc5517](https://github.com/capsizedmoose/com.simonb.core/commit/3bc55170cb974117bedbdcddede6e841dfd14e9e))
+
 ## [1.0.2](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.1...v1.0.2) (2023-03-15)
 
 
