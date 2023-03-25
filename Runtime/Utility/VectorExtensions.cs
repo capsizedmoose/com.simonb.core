@@ -41,6 +41,11 @@ namespace SimonB.Core.Utility
             v = v.normalized * newMagnitude;
             return v;
         }
+
+        public static Vector3 SetMagnitude(this Vector3 v, float newMagnitude) {
+            v = v.normalized * newMagnitude;
+            return v;
+        }
         public static float ToAngle(this Vector2 vector2) {
             return Vector2.Angle(Vector2.right, vector2.normalized);
         }
