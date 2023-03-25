@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.3...v1.0.4) (2023-03-25)
+
+
+### Bug Fixes
+
+* Added SetMagnitude to Vector3 ([7cedb1c](https://github.com/capsizedmoose/com.simonb.core/commit/7cedb1c555a7ee879e32f9065672a9fc8f2f01ff))
+
 ## [1.0.3](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.2...v1.0.3) (2023-03-25)
 
 
