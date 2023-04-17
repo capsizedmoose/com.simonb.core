@@ -34,7 +34,7 @@ namespace SimonB.Core.Utility
         public static Vector2 ToDirectionVector(this float degrees) {
             float sin = Mathf.Sin(degrees * Mathf.Deg2Rad);
             float cos = Mathf.Cos(degrees * Mathf.Deg2Rad);
-            return new Vector2(cos - sin, sin + cos);
+            return new Vector2(cos, sin);
         }
         
         public static Vector2 SetMagnitude(this Vector2 v, float newMagnitude) {
