@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.4...v1.0.5) (2023-04-17)
+
+
+### Bug Fixes
+
+* Fixed ToDirectionVector ([2d7b4fb](https://github.com/capsizedmoose/com.simonb.core/commit/2d7b4fbd729c03b6438834d462179712953fc9d3))
+
 ## [1.0.4](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.3...v1.0.4) (2023-03-25)
 
 
