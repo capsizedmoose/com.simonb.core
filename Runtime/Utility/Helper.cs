@@ -71,7 +71,6 @@ namespace SimonB.Core.Utility
             if (array.Length == 0) { throw new System.InvalidOperationException("Array is empty"); }
             return array[Random.Range(0, array.Length)];
         }
-
         
         public static Vector2 FindNearestPointOnLine(Vector2 origin, Vector2 end, Vector2 point)
         {
@@ -86,5 +85,23 @@ namespace SimonB.Core.Utility
             dotP = Mathf.Clamp(dotP, 0f, magnitudeMax);
             return origin + heading * dotP;
         }
+        
+        
+        public static List<T> GetScriptableObjects<T>(string path) where T : ScriptableObject
+        {
+#if UNITY_EDITOR
+            string[] guids = UnityEditor.AssetDatabase.FindAssets("t:" + typeof(T).ToString(), new[] { path });
+            List<T> scriptableObjects = new List<T>();
+            foreach (string guid in guids)
+            {
+                string assetPath = UnityEditor.AssetDatabase.GUIDToAssetPath(guid);
+                scriptableObjects.Add(UnityEditor.AssetDatabase.LoadAssetAtPath(assetPath,typeof(T)) as T);
+            }
+            return scriptableObjects;
+#else
+			return null;
+#endif
+        }
+        
     }
 }
