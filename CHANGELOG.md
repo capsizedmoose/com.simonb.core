@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.5...v1.0.6) (2023-06-17)
+
+
+### Bug Fixes
+
+* Added singleton and get scriptables to the helper ([4abd08a](https://github.com/capsizedmoose/com.simonb.core/commit/4abd08ad4c356eefc2386a16fe699d5381c7f7b3))
+
 ## [1.0.5](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.4...v1.0.5) (2023-04-17)
 
 
