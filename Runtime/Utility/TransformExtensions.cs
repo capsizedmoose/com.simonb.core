@@ -7,7 +7,11 @@ namespace SimonB.Core.Utility
         public static void Move2D(this Transform transform, Vector2 vector2) {
             transform.position += vector2.ToVector3(0);
         }
-        
+
+        public static void SetRotationToAngle(this Transform transform, float Angle)
+        {
+            transform.rotation = Angle.ToEulerAngle();
+        }
         
         public static void DeleteChildren(this Transform t)
         {
