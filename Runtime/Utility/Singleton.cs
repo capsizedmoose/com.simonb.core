@@ -1,7 +1,7 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace ARPG.Runtime.Utilities
+namespace SimonB.Core.Utility
 {
     public abstract class StaticInstance<T> : SerializedMonoBehaviour where T : SerializedMonoBehaviour
     {
