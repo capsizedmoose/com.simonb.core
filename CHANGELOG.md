@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.6...v1.0.7) (2023-06-18)
+
+
+### Bug Fixes
+
+* added "transform.SetRotationToAngle" ([c32e2ac](https://github.com/capsizedmoose/com.simonb.core/commit/c32e2aced944a518a90b67a1d7f46944ec6efd31))
+
 ## [1.0.6](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.5...v1.0.6) (2023-06-17)
 
 
