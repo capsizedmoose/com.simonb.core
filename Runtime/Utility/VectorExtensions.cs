@@ -66,5 +66,34 @@ namespace SimonB.Core.Utility
             return Random.Range(vec.x, vec.y);
         }
 
+
+        #region Vector2 SET
+        public static void SetX(this ref Vector2 v, float x) => v.Set(x, v.y);
+        public static void SetY(this ref Vector2 v, float y) => v.Set(v.x, y);
+        public static void Set(this ref Vector2 v, float? x = null, float? y = null)
+        {
+            v.Set(
+                x.GetValueOrDefault(v.x),
+                y.GetValueOrDefault(v.y)
+            );
+        }
+        #endregion
+        
+        
+        #region Vector3 SET
+        public static void Set(this ref Vector3 v, float? x = null, float? y = null, float? z = null)
+        {
+            v.Set(
+                x.GetValueOrDefault(v.x),
+                y.GetValueOrDefault(v.y),
+                z.GetValueOrDefault(v.z)
+            );
+        }
+        public static void SetX(this ref Vector3 v, float x) => v.Set(x, v.y, v.z);
+        public static void SetY(this ref Vector3 v, float y) => v.Set(v.x, y, v.z);
+        public static void SetZ(this ref Vector3 v, float z) => v.Set(v.x, v.y, z);
+        
+        #endregion
+
     }
 }
