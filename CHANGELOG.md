@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.7...v1.0.8) (2023-06-20)
+
+
+### Bug Fixes
+
+* added setting specific axises to vectors and transform ([fc49592](https://github.com/capsizedmoose/com.simonb.core/commit/fc49592c78752c00487eef798b2e78b2aa6eb6e2))
+
 ## [1.0.7](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.6...v1.0.7) (2023-06-18)
 
 
