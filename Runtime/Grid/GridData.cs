@@ -2,19 +2,32 @@
 
 namespace SimonB.Core.Grid
 {
-	public class GridData
+	public class GridData : IGridData
     {
-    	public readonly Vector2Int size;
-    	public readonly Vector2 offset;
-    	public readonly Vector2 cellSize;
+    	private readonly Vector2Int size;
+    	private readonly Vector2 offset;
+    	private readonly Vector2 cellSize;
+	    
+	    private static readonly Vector2[] neighborDirections = {
+		    Vector2.right,
+		    Vector2.up,
+		    Vector2.left,
+		    Vector2.down
+	    };
+	    
     	protected GridData(Vector2Int size, Vector2 offset, Vector2 cellSize)
     	{
     		this.size = size;
     		this.offset = offset;
     		this.cellSize = cellSize;
+		    
 	    }
-    	
-    	public virtual Vector2 GetWorldPosition(Vector2Int gridPosition)
+
+	    public Vector2Int GetGridSize() => size;
+	    public Vector2 GetGridOffset() => offset;
+	    public Vector2 GetCellSize() => cellSize;
+
+	    public virtual Vector2 GetWorldPosition(Vector2Int gridPosition)
     	{
     		return gridPosition * cellSize + offset;
     	}
@@ -27,19 +40,19 @@ namespace SimonB.Core.Grid
     			);
     	}
 
-	    protected virtual Vector2[] Directions =>  new Vector2[]
-	    {
-		    Vector2.right,
-		    Vector2.up,
-		    Vector2.left,
-		    Vector2.down
-	    };
-	    
-    }
+	    public Vector2[] GetNeighborDirections() => neighborDirections;
 
-    public class BasicGridData : GridData
-    {
-    	public BasicGridData(Vector2Int size, Vector2 offset, float cellSize) : base(size, offset, new Vector2(cellSize,cellSize)) { }
+	    public virtual Vector2Int[] GetNeighborIndexes(Vector2Int index)
+	    {
+		    return new[]
+		    {
+			    index + new Vector2Int(1, 0),
+			    index + new Vector2Int(0, 1),
+			    index + new Vector2Int(-1, 0),
+			    index + new Vector2Int(0, -1),
+		    };
+	    }
+	    
     }
 
     

@@ -149,7 +149,7 @@ namespace SimonB.Core.Grid.Hex
 			return new Vector2(q, r);
 		}
 
-		public static Vector2 CubeToOffset(int x, int y, int z, HexOrientation orientation)
+		public static Vector2Int CubeToOffset(int x, int y, int z, HexOrientation orientation)
 		{
 			if (orientation == HexOrientation.PointyTop)
 			{
@@ -161,23 +161,36 @@ namespace SimonB.Core.Grid.Hex
 			}
 		}
 
-		public static Vector2 CubeToOffset(Vector3 offsetCoord, HexOrientation orientation)
+		public static Vector2Int CubeToOffset(Vector3 offsetCoord, HexOrientation orientation)
 		{
 			return CubeToOffset((int)offsetCoord.x, (int)offsetCoord.y, (int)offsetCoord.z, orientation);
 		}
 
-		public static Vector2 CubeToOffsetPointy(int x, int y ,int z)
+		public static Vector2Int CubeToOffsetPointy(int x, int y ,int z)
 		{
-			Vector2 offsetCoordinates = new Vector2(x + (y - (y & 1)) / 2, y);
+			Vector2Int offsetCoordinates = new Vector2Int(x + (y - (y & 1)) / 2, y);
 			return offsetCoordinates;
 		}
 
-		public static Vector2 CubeToOffsetFlat(int x, int y, int z)
+		public static Vector2Int CubeToOffsetFlat(int x, int y, int z)
 		{
-			Vector2 offsetCoordinates = new Vector2(x,y + (x - (x & 1)) / 2);
+			Vector2Int offsetCoordinates = new Vector2Int(x,y + (x - (x & 1)) / 2);
 			return offsetCoordinates;
 		}
-
+		
+		public static Vector2Int[] GetCubeNeighbors(Vector3 cube,HexOrientation orientation)
+		{
+			return new Vector2Int[]
+			{
+				CubeToOffset(cube + new Vector3(+1, 0, -1), orientation),
+				CubeToOffset(cube + new Vector3(0, +1, -1), orientation),
+				CubeToOffset(cube + new Vector3(-1, +1, 0), orientation),
+				CubeToOffset(cube + new Vector3(-1, 0, +1), orientation),
+				CubeToOffset(cube + new Vector3(0, -1, +1), orientation),
+				CubeToOffset(cube + new Vector3(+1, -1, 0), orientation),
+			};
+		}
+		
 		public static Vector3 CubeRound(Vector3 frac)
 		{
 			Vector3 roundedCoordinates = new Vector3();
@@ -238,7 +251,7 @@ namespace SimonB.Core.Grid.Hex
 			return AxialRound(flatHexCoordinates);
 		}
 
-		public static Vector2 CoordinateToOffset(float x, float z, float hexSize, HexOrientation orientation)
+		public static Vector2Int CoordinateToOffset(float x, float z, float hexSize, HexOrientation orientation)
 		{
 			return CubeToOffset(AxialToCube(CoordinateToAxial(x, z, hexSize,orientation)), orientation);
 		}
