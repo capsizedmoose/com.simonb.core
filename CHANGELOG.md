@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.9...v1.0.10) (2023-09-18)
+
+
+### Bug Fixes
+
+* added SimonB.Core.Grid and updated singleton + vector extensions ([7785185](https://github.com/capsizedmoose/com.simonb.core/commit/7785185999691d8cf8dc005025f5f49c1686a428))
+
 ## [1.0.9](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.8...v1.0.9) (2023-07-08)
 
 
