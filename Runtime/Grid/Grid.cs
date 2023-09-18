@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SimonB.Core.Grid
 {
-	public class Grid<TGridObject,TGridData> where TGridData : GridData 
+	public class Grid<TGridObject,TGridData> where TGridData : IGridData 
 	{
 		private readonly TGridObject[,] grid;
 		private readonly TGridData data;
