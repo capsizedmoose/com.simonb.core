@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.10...v1.0.11) (2023-09-18)
+
+
+### Bug Fixes
+
+* updated Grid ([aecf659](https://github.com/capsizedmoose/com.simonb.core/commit/aecf6594601506f393fbfa2e3c932e4be7ee2f91))
+
 ## [1.0.10](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.9...v1.0.10) (2023-09-18)
 
 
