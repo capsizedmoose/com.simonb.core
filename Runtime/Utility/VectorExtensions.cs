@@ -66,6 +66,11 @@ namespace SimonB.Core.Utility
             return Random.Range(vec.x, vec.y);
         }
 
+        public static Vector2 ToNormalVector(this float angle)
+        {
+            float radian = angle * Mathf.Deg2Rad;
+            return new Vector2(Mathf.Cos(radian), Mathf.Sin(radian));
+        }
 
         #region Vector2 SET
         public static void SetX(this ref Vector2 v, float x) => v.Set(x, v.y);
@@ -95,5 +100,28 @@ namespace SimonB.Core.Utility
         
         #endregion
 
+        
+        
+        public static bool IsInside(this Vector2Int a, Vector2Int size)
+        {
+            return (a.x > 0 && a.x <= size.y && a.y > 0 && a.y < size.y);
+        }
+
+        public static bool IsOutside(this Vector2Int a, Vector2Int size)
+        {
+            return (a.x < 0 || a.x > size.y || a.y < 0 || a.y > size.y);
+        }
+
+        public static Vector2Int Expand(this Vector2Int a, int expandBy)
+        {
+            return a + new Vector2Int(Mathf.Max(0,a.x +expandBy), Mathf.Max(0,a.y +expandBy));
+        }
+
+        public static Vector2Int Shrink(this Vector2Int a, int shrinkBy)
+        {
+            return a.Expand(-shrinkBy);
+        }
+        
+        
     }
 }

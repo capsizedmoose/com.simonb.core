@@ -1,0 +1,17 @@
+{
+    "name": "SimonB.Core.Grid",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9e38b36acc95f3f46a55e4cb294984cd",
+        "GUID:5e3e940ac86da9c4194bc98d9f754b82"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
