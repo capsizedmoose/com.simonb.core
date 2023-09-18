@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.8...v1.0.9) (2023-07-08)
+
+
+### Bug Fixes
+
+* Added springs and quithelper ([5453cc1](https://github.com/capsizedmoose/com.simonb.core/commit/5453cc154b6fea854c8fc89a1ce89fcb30b98683))
+
 ## [1.0.8](https://github.com/capsizedmoose/com.simonb.core/compare/v1.0.7...v1.0.8) (2023-06-20)
 
 
